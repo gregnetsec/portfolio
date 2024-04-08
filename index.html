@@ -1,182 +1,729 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!------------ Unicons ------------>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <!------------ Swiper CSS ------------>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
-      <title>PORTFOLIO</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               Grégory <span>DOMINGUES</span>
-            </a>
+    <!------------ CSS ------------>
+    <link rel="stylesheet" href="./css/style.css">
 
+    <title>PORTFOLIO GREGORY</title> 
+</head>
+
+<body>
+    <!------------ HEADER ------------>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">DOMINGUES Grégory</a>
             <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#apropos" class="nav__link">Ä propos</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#stages" class="nav__link">Stages</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#projets" class="nav__link">Projets</a>
-                  </li>
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link">Contact</a>
-                  </li>
-               </ul>
-
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>À propos
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Compétences
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>Veille
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Stages
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
+        </nav>
+    </header>
 
-         </nav>
-         
-         
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
+    <!------------ Main ------------>
+    <main class="main">
+        <!------------ Home ------------>
+        <section class="home section" id="home">
             <div class="home__container container grid">
-               <div class="home__content">
-                  <div class="home__data">
-                     <h3 class="home__subtitle">
-                        Bonjour, <span>Je suis</span>
-                     </h3>
+                <div class="home__content grid">
+                    <div class="home__social">                       
+                        <a href="https://www.linkedin.com/in/gr%C3%A9gory-domingues-a404502b9/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/sh1nj1w" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-                     <h1 class="home__title">Grégory DOMINGUES</h1>
+                                    <image class="home__blob-img" x='12' y='18' href="./img/guy.png"/>
+                                </g>
+                            </svg>
+                    </div>
+                    <div class="home__date">
+                        <h1 class="home__title">Domingues Grégory</h1>
+                        <h3 class="home__subtitle">Etudiant en BTS SIO option SISR</h3>
+                        <a href="#contact" class="button button--flex">
+                                Me contacter <i class="uil uil-message button__icon"></i>
+                            </a>
+                    </div>
+                </div>
+                <div class="home__scrool">
+                    <a href="#about" class="home__scrool-button button--flex">
+                        <i class="uil uil-mouse-alt home__scrool-mouse"></i>
+                        <span class="home__scrool-name">Descendre</span>
+                        <i class="uil uil-arrow-down home__scrool-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                     <h3 class="home__education">Etudiant en seconde année de BTS SIO SISR</h3>
+        <!------------ About ------------>
+        <section class="about section container" id="about">
+            <h2 class="section__title">À propos de moi</h2>
+            <span class="section__subtitle">Qui suis-je</span>
+            <div class="about__container grid">
+                <img src="./img/work3.jpg" alt="img" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">Je m'appelle Grégory, j'ai 19 ans et je suis étudiant en BTS SIO option SISR. L'informatique chez moi c'est toute une passion que j'exerce depuis plusieurs années. J'ai débuté en faisant du HTML, CSS et je me suis diversifié dans pleins de domaines comme la sécurité informatique en autodidacte ou encore le réseau pendant mes études. Après mes études, je vais faire un master en cybersécurité.     
+                    </p>
+                    <div class="about__buttons">
+                        <a download="" href="./DOMINGUES GREGORY.pdf" class="button button--flex">
+                            Mon CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                     <p class="home__description">
-                        Je suis passionné par les réseaux informatiques et 
-                        la cybersécurité, suite à mon BTS SIO j'aimerai faire
-                        un master en cybersécurité ou un master MIAGE.
-                     </p>
+        <!------------ Skills ------------>
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Compétences</h2>
+            <span class="section__subtitle">Mes compétences</span>
+            <div class="skills__container container grid">
+                <div>
+                    <!------------ Skills 1 ------------>
+                    <div class="skills__content skills__open">
+                        <div class="skills__header"> 
+                            <i class="uil uil-swatchbook skills__icon"></i>                        
+                            <div>
+                                <h1 class="skills__title">Réseau</h1>
+                                <span class="skills__subtitle"></span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Windows Server (AD, GPO,
+                                        DNS, DHCP, NPS, QUOTAS,
+                                        PARTAGES, PSO)</h3>
+                                    <span class="skills__number">95%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Routage</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Adressage IP</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Sécurisation accès Wi-Fi</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ Skills 2 ------------>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-swatchbook skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Developpement</h1>
+                                
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML / CSS / PHP / SQL</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C# / SQL</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__photoshop"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PYTHON / BATCH / BASH / POWERSHELL</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__corel"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!------------ Skills 3 ------------>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Autres</h1>
+                               
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">WORD</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">EXCEL</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">POWERPOINT</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Draw.io</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__firebase"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ Skills 4 ------------>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-file-bookmark-alt skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Soft Skills</h1>
+                                <span class="skills__subtitle">Qualités</span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Communication</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__commun"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Travail en équipe</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__team"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Autonome</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__organiz"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Sérieux</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__creat"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!------------ Skills 5 ------------>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-english-to-chinese skills__icon"></i>
+                            <div>
+                                <h1 class="skills__titles">Langues</h1>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Français</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__ukr"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Anglais</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__rus"></span>
+                                </div>
+                            </div>
+                            <div class="skills__date">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Italien</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__eng"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                     <a href="#contact" class="button">Me contacter</a>
+        <!------------ Qualification ------------>
+        <section class="qualification section">
+            <h2 class="section__title">Expériences</h2>
+            <span class="section__subtitle">Scolaires et professionnelles</span>
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i> Etudes
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i> Pro
+                    </div>
+                </div>
+                <div class="qualification__sections">
+                    <!------------ Qualification content 1 ------------>
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!------------ Qualification 1 ------------>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Collège Jeanne D'arc Péage de Rousillon 38</h3>
+                                <span class="qualification__subtitle">Brevet des collèges</span>
+                                
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!------------ Qualification 2 ------------>
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Bac STI2D SIN</h3>
+                                <span class="qualification__subtitle">Lycée Galilée VIENNE 38 </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i> 2019 - 2022
+                                </div>
+                            </div>
+                        </div>
+                        <!------------ Qualification 3 ------------>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">BTS SIO Option SISR</h3>
+                                <span class="qualification__subtitle">Lycée Ella Fitzerald SAINT ROMAIN EN GAL 69</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i> 2022 - 2024
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ Qualification content 2 ------------>
+                    <div class="qualification__content" data-content id="work">
+                        <!------------ Qualification 1 ------------>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Stage première année BTS SIO</h3>
+                                <span class="qualification__subtitle">Mise en place authentification par certificat Wi-Fi<br><br>COM&COMPANY</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i> 09/05/2023 - 30/06/2023
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!------------ Qualification 2 ------------>
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">CDD</h3>
+                                <span class="qualification__subtitle">Mise en place Wi-Fi certificat pour les linux<br><br>COM&COMPANY</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i> 07/2023 (1mois)
+                                </div>
+                            </div>
+                        </div>
+                        <!------------ Qualification 3 ------------>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Stage deuxième année BTS SIO</h3>
+                                <span class="qualification__subtitle">Mise en place authentification certificat LAN + déploiement Wi-Fi sur MacOS<br><br>COM&COMPANY</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i> 2016 - 2020
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!------------ Qualification 4 ------------>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                  </div>
+        <!------------ Services ------------>
+        <section class="services section" id="services">
+            <h2 class="section__title">Veille Technologique</h2>
+            <span class="section__subtitle">Veille</span>
+            <div class="services__container container grid">
+                <!------------ Services 1 ------------>
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Comment, Ou, quand? <br> je fais ma veille</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        Voir plus
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal--content">
+                            <h4 class="services__modal--title">Veille</h4>
+                            <i class="uil uil-times services__modal--close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    
+                                    <p>Je fais de la veille technologique dès que je vais sur les réseaux sociaux étant donnée que je suis beaucoup de comptes liés à l'informatique.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    
+                                    <p>Mes principales sources sont : Youtube, Twitter, Feedly</p>
+                                </li>
+                                <li class="services__modal-service">
+                                   
+                                    <p>Je suis un très grand fan de la chaine d'Underscore.</p>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
 
-                  <div class="home__social">
-                     <a href="https://github.com/" target="_blank" class="home__social-link">
-                        <i class="ri-github-fill"></i>
-                     </a>
-                     <a href="https://linkedin.com/" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                     </a>
-                     <a href="CV" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                     </a>
-                  </div>
-               </div>
+                </div>
+                <!------------ Services 2 ------------>
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">La cryptographie</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        Voir plus
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal--content">
+                            <h4 class="services__modal--title">Cryptographie</h4>
+                            <i class="uil uil-times services__modal--close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    
+                                    <p>Les 3 mots d'ordre de la cryptographie sont : Confidentitalité, authenticité et intégrité. La cryptographie est un pilier fondamental de la sécurité des données, jouant un rôle essentiel dans la préservation de la confidentialité et de l'intégrité des informations sensibles. Dans ma veille technologique, j'ai approfondi ma compréhension de ce domaine crucial et exploré son application dans les environnements informatiques contemporains.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    
+                                    <p>Le but de la cryptographie est d'utiliser des algorithmes pour transformer les données en un format illisible, rendant ainsi les informations inintelligibles pour les parties non autorisées. Nous avons par exemple SSL/TLS utilisés pour sécuriser les communications sur Internet, ainsi que les mécanismes de chiffrement de bout en bout pour garantir la confidentialité des messages échangés.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    
+                                    <p>La cryptographie joue un rôle majeur pour garantir la sécurité des données des entreprises</p>
+                                </li>
+                                <li class="services__modal-service">                               
+                                    <a href="https://lejournal.cnrs.fr/articles/la-cryptographie-face-a-la-menace-quantique">La cryptographie face à la menace quantique</a>
+                                </li>
+                                <li class="services__modal-service">
+                                    <a href="https://lejournal.cnrs.fr/articles/vers-une-cryptographie-post-quantique">Vers une cryptographie post-quantique</a>                               
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-               <div class="home_image">
-                  <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
-                     <mask id="maskBlob" mask-type="alpha">
-                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                     </mask>
-                     <g mask="url(#maskBlob)">
-                        <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
-                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
-                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
-                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-                  
-                        <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
-                     </g>
-                  
-                     <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
-                  
-                     <defs>
-                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                        </pattern>
-                  
-                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                           <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                        </pattern>
-                  
-                        <!-- Insert your profile (recommended size: 640 x 940) -->
-                        <image class="home__img" id="imageBlob" width="640" height="925" href="../Portfolio/assets/img/perfil.png"/>
-                     </defs>
-                  </svg>
-               </div>
+                </div>
+                <!------------ Services 3 ------------>
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-setting services__icon"></i>
+                        <h3 class="services__title">Gestion des vulnérabilités</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link services__button">
+                        Voir plus
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal--content">
+                            <h4 class="services__modal--title">Gestion des vulnérabilités</h4>
+                            <i class="uil uil-times services__modal--close"></i>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    
+                                    <p>La gestion des vulnérabilités est un aspect crucial de la cybersécurité, visant à identifier, évaluer et atténuer les failles de sécurité potentielles dans les infrastructures informatiques.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    
+                                    <p>J'ai examiné les différentes techniques et outils de gestion des vulnérabilités, tels que les scanners de vulnérabilités automatisés, les tests d'intrusion et les évaluations de sécurité. Ces solutions permettent d'identifier les failles de sécurité dans les réseaux, les applications et les systèmes d'exploitation, fournissant ainsi une vue d'ensemble des risques potentiels auxquels une organisation est exposée.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    
+                                    <p>Nous pouvons aussi utiliser les normes et les cadres de référence en matière de gestion des vulnérabilités, tels que le CVE (Common Vulnerabilities and Exposures) et le CVSS (Common Vulnerability Scoring System), qui fournissent des directives pour identifier, évaluer et traiter les vulnérabilités</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    
+                                    <p>Dès la connaissance d'une vulnérabilité, il faut mettre en place des mesures correctives appropriées. Cela inclut la mise en œuvre de correctifs de sécurité, la configuration des pare-feu et des dispositifs de sécurité</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <a href="https://www.exploit-db.com/">Site repertoriant les vulnérabilités connues</a>                               
+                                </li>
+                                <li class="services__modal-service">
+                                    <a href="https://vuldb.com/">Site nous donnant le score CVSS d'une vulnérabilité connue</a>                               
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
+                </div>
 
             </div>
+        </section>
 
- 
-         </section>
+        <!------------ Portfolio ------------>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Stages</h2>
+            <span class="section__subtitle">Mes stages récents</span>
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!------------ Portfolio 1 ------------>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./img/COMCOMPANY.webp" alt="img" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Stages de première et seconde année de BTS SIO</h3>
+                            <p class="portfolio__description">COM&COMPANY.</p>
+                            <a href="stage/COMCOMPANY.html" target="_blank" class="button button--flex button--small portfolio__button">
+                                Voir plus
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
+        <!------------ Contact Me ------------>
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contactez moi</h2>
+            <span class="section__subtitle">Entrons en contact</span>
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Appelez moi</h3>
+                            <div class="span__style">
+                                <span class="contact__subtitle">06 95 95 69 01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">gregdomingues14@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Localisation</h3>
+                            <span class="contact__subtitle">Assieu, France</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form grid" action="https://docs.google.com/forms/d/e/1FAIpQLSeX_rog4ojhA3WD3xGRExreVFRbqAWMmmbo9xp9VrRJgIkrBA/formResponse?" name="gform" id="gform" enctype="text/plain" target="hidden_iframe" onsubmit="submitted = true;">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__lable">Nom</label>
+                            <input type="text" class="contact__input" name="entry.496246516" id="entry.496246516">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__lable">Email</label>
+                            <input type="email" class="contact__input" name="entry.156631677" id="entry.156631677">
+                        </div>
+                    </div>
+                    
 
-         <!--==================== SKILLS ====================-->
-         <section class="skills section">
-            
-         </section>
+                    <div class="contact__content">
+                        <label for="" class="contact__lable">Message</label>
+                        <textarea cols="0" rows="7" class="contact__input" name="entry.1894646737" id="entry.1894646737"></textarea>
+                    </div>
+                    <div>
+                        <a href="javascript: document.gform.submit(); onclick=ClearFields();" class="button button--flex">
+                            Envoyer
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            </div>
+        </section>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section" id="services">
-            
-         </section>
 
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
-         </section>
+        <!------------ Scroll Up ------------>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+    </main>
 
-      <!--========== SCROLL UP ==========-->
-      
+    <!------------ Footer ------------>
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">DOMINGUES Grégory</h1>
+                    <span class="footer__subtitle">Etudiant BTS SIO</span>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Bedimcode. All right reserved!</p>
+        </div>
+    </footer>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+    <!------------ Swiper JS ------------>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-      <!--=============== EMAIL JS ===============-->
-      
+    <!------------ JS ------------>
+    <script src="./js/main.js"></script>
+</body>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
 </html>
